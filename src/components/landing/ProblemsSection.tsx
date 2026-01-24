@@ -3,27 +3,35 @@ import { Mail, Eye, Users, AlertTriangle } from 'lucide-react';
 const problems = [
   {
     icon: Mail,
-    title: 'Caos en los Emails',
-    description: 'Solicitudes perdidas en hilos interminables. Sin priorización, sin seguimiento, sin respuestas a tiempo.',
+    title: 'Mala Comunicación',
+    description: 'El 50% de los retrasos en soporte no son técnicos, sino humanos. Silos entre áreas y falta de empatía generan cuellos de botella.',
     color: 'primary',
+    stat: '50%',
+    statLabel: 'retrasos evitables',
   },
   {
     icon: Eye,
-    title: 'Falta de Trazabilidad',
-    description: 'No sabes quién atendió qué, cuándo ni cómo. Cada incidente es una caja negra sin historial.',
+    title: 'Pérdida de Confianza',
+    description: 'Incidentes críticos que se ignoran mientras los usuarios pierden la fe en el equipo de IT.',
     color: 'secondary',
+    stat: '–',
+    statLabel: 'sin visibilidad',
   },
   {
     icon: Users,
-    title: 'Cuellos de Botella',
-    description: 'Departamentos trabajando en silos. Escalaciones que tardan días cuando deberían tomar minutos.',
+    title: 'Silos Departamentales',
+    description: 'Equipos que no hablan el mismo idioma de prioridades. IT trabaja aislado del resto del negocio.',
     color: 'primary',
+    stat: '∞',
+    statLabel: 'escalaciones lentas',
   },
   {
     icon: AlertTriangle,
-    title: 'Reacción vs. Prevención',
-    description: 'Apagando incendios constantemente. Sin visibilidad de patrones ni capacidad de anticipar problemas.',
+    title: 'Modo Bombero 24/7',
+    description: 'Apagando incendios constantemente. Sin capacidad de anticipar problemas ni tiempo para mejorar.',
     color: 'secondary',
+    stat: '0',
+    statLabel: 'prevención',
   },
 ];
 
@@ -42,11 +50,12 @@ const ProblemsSection = () => {
             El Problema
           </span>
           <h2 className="text-3xl md:text-5xl font-bold mb-6">
-            ¿Tu equipo de IT vive apagando{' '}
-            <span className="gradient-text">incendios</span>?
+            El{' '}
+            <span className="gradient-text">50% de los retrasos</span>{' '}
+            no son técnicos
           </h2>
           <p className="text-muted-foreground text-lg">
-            Estos son los síntomas de una gestión de incidencias que necesita evolucionar.
+            Son problemas humanos: mala comunicación, silos entre áreas y falta de empatía entre equipos.
           </p>
         </div>
 
@@ -66,14 +75,24 @@ const ProblemsSection = () => {
               } opacity-0 group-hover:opacity-100 transition-opacity duration-500`} />
               
               <div className="relative z-10">
-                <div className={`w-14 h-14 rounded-xl mb-6 flex items-center justify-center ${
-                  problem.color === 'primary'
-                    ? 'bg-primary/10 group-hover:bg-primary/20'
-                    : 'bg-secondary/10 group-hover:bg-secondary/20'
-                } transition-colors duration-300`}>
-                  <problem.icon className={`w-7 h-7 ${
-                    problem.color === 'primary' ? 'text-primary' : 'text-secondary'
-                  }`} />
+                <div className="flex items-start justify-between mb-4">
+                  <div className={`w-14 h-14 rounded-xl flex items-center justify-center ${
+                    problem.color === 'primary'
+                      ? 'bg-primary/10 group-hover:bg-primary/20'
+                      : 'bg-secondary/10 group-hover:bg-secondary/20'
+                  } transition-colors duration-300`}>
+                    <problem.icon className={`w-7 h-7 ${
+                      problem.color === 'primary' ? 'text-primary' : 'text-secondary'
+                    }`} />
+                  </div>
+                  <div className="text-right">
+                    <div className={`text-2xl font-bold ${
+                      problem.color === 'primary' ? 'text-primary' : 'text-secondary drop-shadow-[0_0_8px_hsl(120_100%_50%/0.6)]'
+                    }`}>
+                      {problem.stat}
+                    </div>
+                    <div className="text-xs text-muted-foreground">{problem.statLabel}</div>
+                  </div>
                 </div>
                 
                 <h3 className="text-xl font-semibold mb-3 text-foreground group-hover:text-foreground/90">

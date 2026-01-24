@@ -15,12 +15,12 @@ const buttonVariants = cva(
         secondary: "bg-secondary text-secondary-foreground hover:bg-secondary/80",
         ghost: "hover:bg-accent hover:text-accent-foreground",
         link: "text-primary underline-offset-4 hover:underline",
-        // Neo-Cyber variants
+        // Neo-Cyber variants with Matrix glow
         neonBlue: "bg-primary text-primary-foreground hover:shadow-[0_0_20px_hsl(210_100%_50%/0.5)] hover:scale-105",
-        neonGreen: "bg-secondary text-secondary-foreground hover:shadow-[0_0_20px_hsl(140_100%_45%/0.5)] hover:scale-105",
+        neonGreen: "bg-secondary text-secondary-foreground hover:shadow-[0_0_20px_hsl(120_100%_50%/0.7),0_0_40px_hsl(120_100%_50%/0.4)] hover:scale-105",
         glass: "glass-card text-foreground border border-border hover:border-primary/50 hover:shadow-[0_0_15px_hsl(210_100%_50%/0.3)]",
-        hero: "bg-gradient-to-r from-primary to-[hsl(200_100%_60%)] text-primary-foreground font-semibold hover:shadow-[0_0_30px_hsl(210_100%_50%/0.5)] hover:scale-105",
-        heroOutline: "border-2 border-primary/50 bg-transparent text-foreground hover:border-primary hover:bg-primary/10 hover:shadow-[0_0_20px_hsl(210_100%_50%/0.3)]",
+        hero: "bg-gradient-to-r from-secondary to-primary text-secondary-foreground font-semibold shadow-[0_0_20px_hsl(120_100%_50%/0.4)] hover:shadow-[0_0_30px_hsl(120_100%_50%/0.6),0_0_50px_hsl(120_100%_50%/0.3)] hover:scale-105",
+        heroOutline: "border-2 border-secondary/50 bg-transparent text-foreground hover:border-secondary hover:bg-secondary/10 hover:shadow-[0_0_20px_hsl(120_100%_50%/0.4)]",
       },
       size: {
         default: "h-10 px-4 py-2",
