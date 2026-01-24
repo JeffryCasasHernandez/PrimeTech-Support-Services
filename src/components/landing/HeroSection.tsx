@@ -34,11 +34,11 @@ const HeroSection = () => {
             className="text-4xl md:text-5xl lg:text-7xl font-bold leading-tight mb-6 animate-fade-in"
             style={{ animationDelay: '0.1s' }}
           >
-            De la Gestión{' '}
-            <span className="text-muted-foreground">Reactiva</span>
+            No solo resolvemos tickets,{' '}
             <br />
-            a la{' '}
-            <span className="gradient-text">Observabilidad Preventiva</span>
+            <span className="gradient-text">garantizamos la continuidad</span>
+            <br />
+            <span className="text-muted-foreground">de tu negocio</span>
           </h1>
 
           {/* Subtitle */}
@@ -46,9 +46,10 @@ const HeroSection = () => {
             className="text-lg md:text-xl text-muted-foreground max-w-3xl mx-auto mb-10 leading-relaxed animate-fade-in"
             style={{ animationDelay: '0.2s' }}
           >
-            Eliminamos el caos de emails y tickets perdidos. Detectamos y resolvemos 
-            incidencias en <span className="text-primary font-semibold">menos de 15 minutos</span>, 
-            antes de que impacten tu operación.
+            Transformamos el soporte técnico reactivo en observabilidad preventiva. 
+            Centralizamos la gestión y garantizamos respuestas en{' '}
+            <span className="text-secondary font-semibold drop-shadow-[0_0_8px_hsl(120_100%_50%/0.8)]">menos de 15 minutos</span>{' '}
+            sin sacrificar la calidad técnica.
           </p>
 
           {/* CTA Buttons */}

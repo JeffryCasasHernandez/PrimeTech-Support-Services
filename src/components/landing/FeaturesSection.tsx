@@ -2,32 +2,32 @@ import { Ticket, BarChart3, Headphones, KeyRound } from 'lucide-react';
 
 const features = [
   {
-    icon: Ticket,
-    title: 'Tickets Automáticos & Portal Autoservicio',
-    description: 'Generación automática de tickets desde múltiples canales. Portal intuitivo donde los usuarios resuelven problemas comunes sin esperar.',
-    benefits: ['Reducción de 60% en tickets repetitivos', 'Clasificación automática por IA', 'Base de conocimientos integrada'],
-    color: 'primary',
+    icon: KeyRound,
+    title: 'Gestión Total de Accesos',
+    description: 'MFA, recuperación de contraseñas y desbloqueo de cuentas inmediatos. Automatización segura que libera a tu equipo.',
+    benefits: ['Restablecimiento de MFA instantáneo', 'Cambios de contraseña en segundos', 'Autoservicio seguro integrado'],
+    color: 'secondary',
   },
   {
     icon: BarChart3,
     title: 'Dashboards en Tiempo Real',
-    description: 'Visualiza la salud de tu servicio al instante. Métricas de SLA, tiempos de respuesta y satisfacción del usuario en un solo lugar.',
-    benefits: ['KPIs actualizados cada 60 segundos', 'Alertas proactivas configurables', 'Reportes ejecutivos automatizados'],
-    color: 'secondary',
+    description: 'El cliente ve el estado de su empresa al instante. Métricas de SLA, tiempos de respuesta y salud del servicio.',
+    benefits: ['KPIs actualizados en vivo', 'Alertas proactivas configurables', 'Transparencia total en SLAs'],
+    color: 'primary',
   },
   {
     icon: Headphones,
     title: 'Soporte Humano 24/7',
-    description: 'Agentes de Nivel 1 disponibles en todo momento. Escalación inteligente que conecta el problema correcto con el experto correcto.',
-    benefits: ['Primera respuesta en < 5 minutos', 'Cobertura global sin interrupciones', 'Escalación con contexto completo'],
-    color: 'primary',
+    description: 'Agentes de Nivel 1 disponibles en todo momento. Primera respuesta real, no bots. Escalación con contexto completo.',
+    benefits: ['Primera respuesta en < 5 minutos', 'Cobertura sin interrupciones', 'Humanos reales, no chatbots'],
+    color: 'secondary',
   },
   {
-    icon: KeyRound,
-    title: 'Gestión de Accesos',
-    description: 'MFA, recuperación de contraseñas y desbloqueo de cuentas. Automatización segura que libera a tu equipo de tareas repetitivas.',
-    benefits: ['Autoservicio para resets de password', 'Integración con AD/LDAP/SSO', 'Auditoría completa de accesos'],
-    color: 'secondary',
+    icon: Ticket,
+    title: 'Portal de Autoservicio',
+    description: 'Base de conocimientos inteligente donde los usuarios resuelven problemas comunes sin esperar.',
+    benefits: ['Reducción de 60% en tickets', 'Clasificación automática por IA', 'Soluciones paso a paso'],
+    color: 'primary',
   },
 ];
 
@@ -43,15 +43,15 @@ const FeaturesSection = () => {
       <div className="container mx-auto px-4 md:px-6 relative z-10">
         {/* Section Header */}
         <div className="text-center max-w-3xl mx-auto mb-16">
-          <span className="text-primary text-sm font-semibold tracking-wider uppercase mb-4 block">
-            Funcionalidades
+          <span className="text-secondary text-sm font-semibold tracking-wider uppercase mb-4 block drop-shadow-[0_0_8px_hsl(120_100%_50%/0.6)]">
+            Servicios Nivel 1 · 24/7
           </span>
           <h2 className="text-3xl md:text-5xl font-bold mb-6">
-            Todo lo que Necesitas para{' '}
-            <span className="gradient-text">Recuperar el Control</span>
+            Recupera la{' '}
+            <span className="gradient-text">Productividad Empresarial</span>
           </h2>
           <p className="text-muted-foreground text-lg">
-            Herramientas diseñadas para reducir tiempos de respuesta y mantener la continuidad operativa.
+            Optimización de recursos, transparencia total en SLAs y soporte humano disponible siempre.
           </p>
         </div>
 

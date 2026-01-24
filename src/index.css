@@ -21,9 +21,13 @@
     --primary: 210 100% 50%;
     --primary-foreground: 220 20% 3%;
 
-    /* Matrix Green - Secondary accent */
-    --secondary: 140 100% 45%;
+    /* Matrix Green - Secondary accent (#00FF41 style) */
+    --secondary: 120 100% 50%;
     --secondary-foreground: 220 20% 3%;
+    
+    /* Intense Matrix Neon */
+    --matrix-neon: 120 100% 50%;
+    --matrix-glow: 0 0 10px hsl(120 100% 50% / 0.8), 0 0 20px hsl(120 100% 50% / 0.6), 0 0 40px hsl(120 100% 50% / 0.4);
 
     --muted: 220 15% 12%;
     --muted-foreground: 215 15% 55%;
@@ -40,11 +44,11 @@
 
     --radius: 0.75rem;
 
-    /* Custom neon glows */
-    --glow-blue: 0 0 20px hsl(210 100% 50% / 0.5), 0 0 40px hsl(210 100% 50% / 0.3);
-    --glow-green: 0 0 20px hsl(140 100% 45% / 0.5), 0 0 40px hsl(140 100% 45% / 0.3);
-    --glow-blue-soft: 0 0 10px hsl(210 100% 50% / 0.3);
-    --glow-green-soft: 0 0 10px hsl(140 100% 45% / 0.3);
+    /* Custom neon glows - intensified */
+    --glow-blue: 0 0 20px hsl(210 100% 50% / 0.6), 0 0 40px hsl(210 100% 50% / 0.4), 0 0 60px hsl(210 100% 50% / 0.2);
+    --glow-green: 0 0 20px hsl(120 100% 50% / 0.7), 0 0 40px hsl(120 100% 50% / 0.5), 0 0 60px hsl(120 100% 50% / 0.3);
+    --glow-blue-soft: 0 0 15px hsl(210 100% 50% / 0.4);
+    --glow-green-soft: 0 0 15px hsl(120 100% 50% / 0.5);
 
     /* Glass effects */
     --glass-bg: hsl(220 20% 8% / 0.7);
@@ -217,6 +221,24 @@
   animation: slideInfinite 30s linear infinite;
 }
 
+/* Scan line animation for Matrix */
+@keyframes scanLine {
+  0% {
+    top: 0%;
+    opacity: 0;
+  }
+  10% {
+    opacity: 1;
+  }
+  90% {
+    opacity: 1;
+  }
+  100% {
+    top: 100%;
+    opacity: 0;
+  }
+}
+
 /* Glow orbs for background */
 .glow-orb-blue {
   position: absolute;
@@ -233,7 +255,7 @@
   width: 300px;
   height: 300px;
   border-radius: 50%;
-  background: radial-gradient(circle, hsl(140 100% 45% / 0.1) 0%, transparent 70%);
+  background: radial-gradient(circle, hsl(120 100% 50% / 0.15) 0%, transparent 70%);
   filter: blur(60px);
   pointer-events: none;
 }
