@@ -4,31 +4,13 @@ import { ArrowRight, Zap, Clock, Shield } from 'lucide-react';
 const HeroSection = () => {
   return (
     <section className="relative min-h-screen flex items-center justify-center overflow-hidden pt-20">
-      {/* Video Background */}
-      <div className="absolute inset-0 z-0">
-        <video
-          autoPlay
-          loop
-          muted
-          playsInline
-          className="absolute inset-0 w-full h-full object-cover opacity-40"
-        >
-          <source
-            src="https://cdn.pixabay.com/video/2020/05/25/40130-424930032_large.mp4"
-            type="video/mp4"
-          />
-        </video>
-        {/* Dark overlay for better text readability */}
-        <div className="absolute inset-0 bg-gradient-to-b from-background/60 via-background/40 to-background" />
-      </div>
-
-      {/* Animated Grid Background */}
-      <div className="absolute inset-0 cyber-grid opacity-30 z-[1]" />
+      {/* Animated Background */}
+      <div className="absolute inset-0 cyber-grid opacity-50" />
       
       {/* Glow Orbs */}
-      <div className="glow-orb-blue top-20 -left-40 animate-float z-[1]" />
-      <div className="glow-orb-green bottom-20 -right-40 animate-float z-[1]" style={{ animationDelay: '3s' }} />
-      <div className="glow-orb-blue top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[600px] h-[600px] opacity-20 z-[1]" />
+      <div className="glow-orb-blue top-20 -left-40 animate-float" />
+      <div className="glow-orb-green bottom-20 -right-40 animate-float" style={{ animationDelay: '3s' }} />
+      <div className="glow-orb-blue top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[600px] h-[600px] opacity-30" />
 
       {/* Animated Grid Lines */}
       <div className="absolute inset-0 overflow-hidden pointer-events-none">
