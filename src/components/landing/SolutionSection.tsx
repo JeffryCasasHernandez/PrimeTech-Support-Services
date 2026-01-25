@@ -1,12 +1,24 @@
 import { Radar, Activity, Brain, TrendingUp, Flame, Eye, Users } from 'lucide-react';
 import HealthMatrix from './HealthMatrix';
+import solutionVideo from '@/assets/solution-background.mp4';
 
 const SolutionSection = () => {
   return (
     <section id="como-funciona" className="py-24 relative overflow-hidden">
-      {/* Background */}
-      <div className="absolute inset-0 bg-gradient-to-b from-background via-muted/20 to-background" />
-      <div className="absolute inset-0 cyber-grid opacity-30" />
+      {/* Video Background */}
+      <div className="absolute inset-0 z-0">
+        <video
+          autoPlay
+          loop
+          muted
+          playsInline
+          className="w-full h-full object-cover opacity-20"
+        >
+          <source src={solutionVideo} type="video/mp4" />
+        </video>
+        <div className="absolute inset-0 bg-gradient-to-b from-background via-background/80 to-background" />
+      </div>
+      <div className="absolute inset-0 cyber-grid opacity-20" />
       
       {/* Glow Effects */}
       <div className="glow-orb-green top-1/3 -left-40 opacity-50" />
