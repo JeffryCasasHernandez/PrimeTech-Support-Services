@@ -1,11 +1,26 @@
 import { Button } from '@/components/ui/button';
 import { ArrowRight, Zap, Clock, Shield } from 'lucide-react';
+import heroVideo from '@/assets/hero-background.mp4';
 
 const HeroSection = () => {
   return (
     <section className="relative min-h-screen flex items-center justify-center overflow-hidden pt-20">
+      {/* Video Background */}
+      <div className="absolute inset-0 z-0">
+        <video
+          autoPlay
+          loop
+          muted
+          playsInline
+          className="w-full h-full object-cover opacity-40"
+        >
+          <source src={heroVideo} type="video/mp4" />
+        </video>
+        <div className="absolute inset-0 bg-gradient-to-b from-background/60 via-background/80 to-background" />
+      </div>
+      
       {/* Animated Background */}
-      <div className="absolute inset-0 cyber-grid opacity-50" />
+      <div className="absolute inset-0 cyber-grid opacity-30" />
       
       {/* Glow Orbs */}
       <div className="glow-orb-blue top-20 -left-40 animate-float" />
