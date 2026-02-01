@@ -47,14 +47,14 @@ const CTASection = () => {
         {/* Main CTA Content */}
         <div className="text-center max-w-4xl mx-auto mb-12">
           <h2 className="text-3xl md:text-5xl lg:text-6xl font-bold mb-6 leading-tight">
-            ¿Tu soporte actual{' '}
-            <span className="gradient-text">realmente protege</span>{' '}
-            tu negocio?
+            ¿Listo para{' '}
+            <span className="gradient-text">Elevar tu Estándar</span>{' '}
+            de Soporte?
           </h2>
           <p className="text-lg md:text-xl text-muted-foreground mb-8 max-w-2xl mx-auto">
             No esperes a que un incidente crítico paralice tu operación. 
             Transforma tu soporte reactivo en una estrategia de{' '}
-            <span className="text-secondary font-semibold">observabilidad preventiva</span>{' '}
+            <span className="text-secondary font-semibold drop-shadow-[0_0_6px_hsl(120_100%_50%/0.6)]">observabilidad preventiva</span>{' '}
             antes de que sea demasiado tarde.
           </p>
         </div>
@@ -64,12 +64,12 @@ const CTASection = () => {
           {urgencyPoints.map((point, index) => (
             <div
               key={index}
-              className="glass-card p-6 rounded-xl border-border/50 text-center group hover:border-primary/50 transition-all duration-300"
+              className="glass-card p-6 rounded-xl border-border/50 text-center group hover:border-primary/50 hover:scale-105 transition-all duration-300 card-shimmer"
             >
               <div className="w-12 h-12 rounded-lg bg-primary/20 flex items-center justify-center mx-auto mb-4 group-hover:shadow-[0_0_20px_hsl(var(--primary)/0.4)] transition-all duration-300">
                 <point.icon className="w-6 h-6 text-primary" />
               </div>
-              <div className="text-3xl font-bold text-secondary mb-2">{point.stat}</div>
+              <div className="text-3xl font-bold text-secondary drop-shadow-[0_0_8px_hsl(120_100%_50%/0.6)] mb-2">{point.stat}</div>
               <p className="text-sm text-muted-foreground">{point.text}</p>
             </div>
           ))}
@@ -87,12 +87,12 @@ const CTASection = () => {
           <div className="relative z-10 text-center">
             <div className="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-secondary/20 border border-secondary/30 mb-6">
               <Shield className="w-4 h-4 text-secondary" />
-              <span className="text-sm font-medium text-secondary">Garantía de respuesta en menos de 15 minutos</span>
+              <span className="text-sm font-medium text-secondary drop-shadow-[0_0_6px_hsl(120_100%_50%/0.6)]">Garantía de respuesta en menos de 15 minutos</span>
             </div>
             
             <h3 className="text-2xl md:text-3xl font-bold mb-4">
               Obtén una asesoría gratuita y descubre cómo podemos{' '}
-              <span className="text-secondary">blindar tu operación</span>
+              <span className="text-secondary drop-shadow-[0_0_8px_hsl(120_100%_50%/0.6)]">blindar tu operación</span>
             </h3>
             
             <p className="text-muted-foreground mb-8 max-w-xl mx-auto">
@@ -101,9 +101,9 @@ const CTASection = () => {
             </p>
 
             <div className="flex flex-col sm:flex-row items-center justify-center gap-4">
-              <Button variant="hero" size="xl" asChild className="w-full sm:w-auto">
+              <Button variant="hero" size="xl" asChild className="w-full sm:w-auto neon-pulse-green hover:scale-105 transition-transform">
                 <a href="#contacto">
-                  Solicitar Asesoría Gratuita
+                  Solicitar Asesoría con un Especialista
                   <ArrowRight className="ml-2 w-5 h-5" />
                 </a>
               </Button>
@@ -123,7 +123,7 @@ const CTASection = () => {
             {[1, 2, 3, 4, 5].map((i) => (
               <div
                 key={i}
-                className="w-24 h-8 rounded bg-muted/30 flex items-center justify-center"
+                className="w-24 h-8 rounded bg-muted/30 flex items-center justify-center hover:opacity-100 transition-opacity"
               >
                 <span className="text-xs text-muted-foreground">Cliente {i}</span>
               </div>
