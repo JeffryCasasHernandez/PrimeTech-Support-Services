@@ -40,7 +40,7 @@ const HeroSection = () => {
           <div className="inline-flex items-center gap-2 glass-card px-4 py-2 rounded-full mb-8 animate-fade-in">
             <span className="w-2 h-2 rounded-full bg-secondary animate-pulse" />
             <span className="text-sm text-muted-foreground">
-              Mesa de Ayuda de Nueva Generación
+              Centro de Observabilidad Proactiva
             </span>
           </div>
 
@@ -49,11 +49,11 @@ const HeroSection = () => {
             className="text-4xl md:text-5xl lg:text-7xl font-bold leading-tight mb-6 animate-fade-in"
             style={{ animationDelay: '0.1s' }}
           >
-            No solo resolvemos tickets,{' '}
+            Más que Soporte:{' '}
             <br />
-            <span className="gradient-text">garantizamos la continuidad</span>
+            <span className="gradient-text">Garantizamos la Continuidad</span>
             <br />
-            <span className="text-muted-foreground">de tu negocio</span>
+            <span className="text-muted-foreground">de tu Negocio</span>
           </h1>
 
           {/* Subtitle */}
@@ -61,10 +61,11 @@ const HeroSection = () => {
             className="text-lg md:text-xl text-muted-foreground max-w-3xl mx-auto mb-10 leading-relaxed animate-fade-in"
             style={{ animationDelay: '0.2s' }}
           >
-            Transformamos el soporte técnico reactivo en observabilidad preventiva. 
-            Centralizamos la gestión y garantizamos respuestas en{' '}
-            <span className="text-secondary font-semibold drop-shadow-[0_0_8px_hsl(120_100%_50%/0.8)]">menos de 15 minutos</span>{' '}
-            sin sacrificar la calidad técnica.
+            Transformamos mesas de ayuda reactivas en centros de{' '}
+            <span className="text-primary font-semibold">Observabilidad Proactiva</span>. 
+            Sustituimos la urgencia vacía por un estándar de{' '}
+            <span className="text-secondary font-semibold drop-shadow-[0_0_8px_hsl(120_100%_50%/0.8)]">15 minutos de resolución real</span>{' '}
+            y empática.
           </p>
 
           {/* CTA Buttons */}
@@ -72,13 +73,13 @@ const HeroSection = () => {
             className="flex flex-col sm:flex-row items-center justify-center gap-4 mb-16 animate-fade-in"
             style={{ animationDelay: '0.3s' }}
           >
-            <Button variant="hero" size="xl" asChild>
+            <Button variant="hero" size="xl" asChild className="neon-pulse-green hover:scale-105 transition-transform">
               <a href="#contacto" className="group">
-                Solicitar Asesoría Gratuita
+                Solicitar Asesoría con un Especialista
                 <ArrowRight className="ml-2 group-hover:translate-x-1 transition-transform" />
               </a>
             </Button>
-            <Button variant="heroOutline" size="xl" asChild>
+            <Button variant="heroOutline" size="xl" asChild className="hover:scale-105 transition-transform">
               <a href="#como-funciona">Ver Cómo Funciona</a>
             </Button>
           </div>
@@ -89,11 +90,11 @@ const HeroSection = () => {
             style={{ animationDelay: '0.4s' }}
           >
             {[
-              { icon: Clock, value: '< 15 min', label: 'Tiempo de Resolución' },
+              { icon: Clock, value: '< 15 min', label: 'Resolución Real' },
               { icon: Zap, value: '99.9%', label: 'Uptime Garantizado' },
               { icon: Shield, value: '24/7', label: 'Soporte Humano' },
             ].map((stat, index) => (
-              <div key={index} className="glass-card p-6 rounded-xl group hover:border-primary/30 transition-all duration-300">
+              <div key={index} className="glass-card p-6 rounded-xl group hover:border-primary/30 hover:scale-105 transition-all duration-300 card-shimmer">
                 <stat.icon className="w-8 h-8 text-primary mb-3 mx-auto group-hover:scale-110 transition-transform" />
                 <div className="text-2xl md:text-3xl font-bold gradient-text mb-1">
                   {stat.value}

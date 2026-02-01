@@ -7,8 +7,8 @@
 
 @layer base {
   :root {
-    /* Dark cyber theme - no light mode */
-    --background: 220 20% 3%;
+    /* Dark cyber theme - ABSOLUTE BLACK */
+    --background: 0 0% 0%;
     --foreground: 210 20% 95%;
 
     --card: 220 20% 6%;
@@ -141,6 +141,34 @@
     animation: pulseGlow 3s ease-in-out infinite;
   }
 
+  /* Neon pulse for CTA buttons */
+  .neon-pulse-green {
+    animation: neonPulseGreen 2s ease-in-out infinite;
+  }
+
+  /* Card loading micro-interaction */
+  .card-shimmer {
+    position: relative;
+    overflow: hidden;
+  }
+
+  .card-shimmer::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: -100%;
+    width: 50%;
+    height: 100%;
+    background: linear-gradient(
+      90deg,
+      transparent,
+      hsl(120 100% 50% / 0.05),
+      hsl(210 100% 50% / 0.05),
+      transparent
+    );
+    animation: shimmer 3s ease-in-out infinite;
+  }
+
   /* Shine effect for buttons */
   .shine-effect {
     position: relative;
@@ -165,6 +193,16 @@
 
   .shine-effect:hover::before {
     left: 100%;
+  }
+
+  /* Hover scale effect */
+  .hover-glow-scale {
+    @apply transition-all duration-300;
+  }
+
+  .hover-glow-scale:hover {
+    transform: scale(1.05);
+    box-shadow: var(--glow-green);
   }
 }
 
@@ -219,6 +257,26 @@
 
 .infinite-scroll {
   animation: slideInfinite 30s linear infinite;
+}
+
+/* Neon pulse green keyframe */
+@keyframes neonPulseGreen {
+  0%, 100% {
+    box-shadow: 0 0 20px hsl(120 100% 50% / 0.6), 0 0 40px hsl(120 100% 50% / 0.4), 0 0 60px hsl(120 100% 50% / 0.2);
+  }
+  50% {
+    box-shadow: 0 0 30px hsl(120 100% 50% / 0.8), 0 0 60px hsl(120 100% 50% / 0.5), 0 0 90px hsl(120 100% 50% / 0.3);
+  }
+}
+
+/* Card shimmer animation */
+@keyframes shimmer {
+  0% {
+    left: -100%;
+  }
+  50%, 100% {
+    left: 150%;
+  }
 }
 
 /* Scan line animation for Matrix */

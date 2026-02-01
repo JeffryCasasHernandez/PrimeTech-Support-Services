@@ -1,6 +1,6 @@
 import { useState } from 'react';
 import { Button } from '@/components/ui/button';
-import { Send, CheckCircle2 } from 'lucide-react';
+import { Send, CheckCircle2, Sparkles } from 'lucide-react';
 
 const ContactSection = () => {
   const [isSubmitted, setIsSubmitted] = useState(false);
@@ -35,21 +35,21 @@ const ContactSection = () => {
         <div className="max-w-2xl mx-auto">
           {/* Section Header */}
           <div className="text-center mb-12">
-            <span className="text-secondary text-sm font-semibold tracking-wider uppercase mb-4 block">
-              Contacto
+            <span className="text-secondary text-sm font-semibold tracking-wider uppercase mb-4 block drop-shadow-[0_0_8px_hsl(120_100%_50%/0.6)]">
+              Conversión
             </span>
             <h2 className="text-3xl md:text-5xl font-bold mb-6">
-              Recibe{' '}
-              <span className="gradient-text">Asesoría Personalizada</span>
+              ¿Listo para{' '}
+              <span className="gradient-text">Elevar tu Estándar</span>?
             </h2>
             <p className="text-muted-foreground text-lg">
               Cuéntanos sobre tu operación y te mostraremos cómo podemos transformar 
-              tu gestión de incidencias.
+              tu gestión de incidencias en un motor de satisfacción.
             </p>
           </div>
 
           {/* Form Card */}
-          <div className="glass-card p-8 md:p-10 rounded-2xl border-primary/20 relative">
+          <div className="glass-card p-8 md:p-10 rounded-2xl border-primary/20 relative card-shimmer">
             {!isSubmitted ? (
               <form onSubmit={handleSubmit} className="space-y-6">
                 {/* Name & Company */}
@@ -65,7 +65,7 @@ const ContactSection = () => {
                       value={formData.name}
                       onChange={handleChange}
                       required
-                      className="w-full px-4 py-3 rounded-lg bg-muted/50 border border-border text-foreground placeholder:text-muted-foreground focus:outline-none focus:border-primary focus:ring-1 focus:ring-primary transition-all duration-200"
+                      className="w-full px-4 py-3 rounded-lg bg-muted/50 border border-border text-foreground placeholder:text-muted-foreground focus:outline-none focus:border-primary focus:ring-1 focus:ring-primary focus:shadow-[0_0_10px_hsl(210_100%_50%/0.3)] transition-all duration-200"
                       placeholder="Tu nombre"
                     />
                   </div>
@@ -80,7 +80,7 @@ const ContactSection = () => {
                       value={formData.company}
                       onChange={handleChange}
                       required
-                      className="w-full px-4 py-3 rounded-lg bg-muted/50 border border-border text-foreground placeholder:text-muted-foreground focus:outline-none focus:border-primary focus:ring-1 focus:ring-primary transition-all duration-200"
+                      className="w-full px-4 py-3 rounded-lg bg-muted/50 border border-border text-foreground placeholder:text-muted-foreground focus:outline-none focus:border-primary focus:ring-1 focus:ring-primary focus:shadow-[0_0_10px_hsl(210_100%_50%/0.3)] transition-all duration-200"
                       placeholder="Nombre de tu empresa"
                     />
                   </div>
@@ -98,7 +98,7 @@ const ContactSection = () => {
                     value={formData.email}
                     onChange={handleChange}
                     required
-                    className="w-full px-4 py-3 rounded-lg bg-muted/50 border border-border text-foreground placeholder:text-muted-foreground focus:outline-none focus:border-primary focus:ring-1 focus:ring-primary transition-all duration-200"
+                    className="w-full px-4 py-3 rounded-lg bg-muted/50 border border-border text-foreground placeholder:text-muted-foreground focus:outline-none focus:border-primary focus:ring-1 focus:ring-primary focus:shadow-[0_0_10px_hsl(210_100%_50%/0.3)] transition-all duration-200"
                     placeholder="tu@empresa.com"
                   />
                 </div>
@@ -114,14 +114,15 @@ const ContactSection = () => {
                     value={formData.message}
                     onChange={handleChange}
                     rows={4}
-                    className="w-full px-4 py-3 rounded-lg bg-muted/50 border border-border text-foreground placeholder:text-muted-foreground focus:outline-none focus:border-primary focus:ring-1 focus:ring-primary transition-all duration-200 resize-none"
+                    className="w-full px-4 py-3 rounded-lg bg-muted/50 border border-border text-foreground placeholder:text-muted-foreground focus:outline-none focus:border-primary focus:ring-1 focus:ring-primary focus:shadow-[0_0_10px_hsl(210_100%_50%/0.3)] transition-all duration-200 resize-none"
                     placeholder="Cuéntanos sobre tu situación actual, número de usuarios, principales desafíos..."
                   />
                 </div>
 
                 {/* Submit Button */}
-                <Button type="submit" variant="hero" size="xl" className="w-full">
-                  Enviar Solicitud
+                <Button type="submit" size="xl" className="w-full bg-secondary text-secondary-foreground hover:bg-secondary/90 neon-pulse-green hover:scale-[1.02] transition-all duration-300">
+                  <Sparkles className="mr-2 w-5 h-5" />
+                  Solicitar Asesoría con un Especialista
                   <Send className="ml-2 w-5 h-5" />
                 </Button>
 
@@ -133,7 +134,7 @@ const ContactSection = () => {
               </form>
             ) : (
               <div className="text-center py-12 animate-fade-in">
-                <div className="w-20 h-20 rounded-full bg-secondary/20 flex items-center justify-center mx-auto mb-6">
+                <div className="w-20 h-20 rounded-full bg-secondary/20 flex items-center justify-center mx-auto mb-6 shadow-[0_0_30px_hsl(120_100%_50%/0.4)]">
                   <CheckCircle2 className="w-10 h-10 text-secondary" />
                 </div>
                 <h3 className="text-2xl font-bold mb-4">¡Solicitud Recibida!</h3>
