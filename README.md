@@ -1,73 +1,62 @@
-# Welcome to your Lovable project
+# PrimeTech Support Services - Documentación Técnica de la Landing Page
 
-## Project info
+![Hero Preview](https://primetech-support-services.vercel.app/captura-hero.png)
 
-**URL**: https://lovable.dev/projects/REPLACE_WITH_PROJECT_ID
+## 1. Información General
+* **Nombre del Proyecto:** PrimeTech Support Services
+* **Nombre del Estudiante:** Jeffry Santiago Casas Hernandez
+* **Fecha:** Febrero 2026
+* **Curso:** CALIDAD SERVICIO DE SOFTWARE 3
+* **Enlace del Proyecto:** [https://primetech-support-services.vercel.app/](https://primetech-support-services.vercel.app/)
 
-## How can I edit this code?
+---
 
-There are several ways of editing your application.
+## 2. Descripción del Proyecto
+### ¿Qué hace el proyecto?
+Es una Landing Page profesional diseñada para ofrecer servicios de **Mesa de Ayuda de Nueva Generación**, enfocada en la transición del soporte reactivo hacia la **observabilidad proactiva**.
 
-**Use Lovable**
+### ¿Qué problema soluciona?
+Resuelve la ineficiencia operativa y la desinformación en el soporte técnico, abordando el impacto del factor humano que representa hasta el **50% de los retrasos**.
 
-Simply visit the [Lovable Project](https://lovable.dev/projects/REPLACE_WITH_PROJECT_ID) and start prompting.
+---
 
-Changes made via Lovable will be committed automatically to this repo.
+## 3. Tecnologías Utilizadas
+* **React.js & Vite:** Framework para una Single Page Application de alto rendimiento.
+* **Tailwind CSS:** Estilos modernos con estética Cyberpunk y paleta Neón.
+* **Lucide React:** Iconografía técnica para dashboards y servicios.
+* **Git & GitHub:** Control de versiones y flujo de trabajo profesional.
 
-**Use your preferred IDE**
+---
 
-If you want to work locally using your own IDE, you can clone this repo and push changes. Pushed changes will also be reflected in Lovable.
+## 4. Estructura del Proyecto
+Organización de archivos basada en el entorno de Lovable:
 
-The only requirement is having Node.js & npm installed - [install with nvm](https://github.com/nvm-sh/nvm#installing-and-updating)
+```text
+/PrimeTech-Support-Services
+ ├── public/             # Recursos estáticos.
+ ├── src/                # Código fuente.
+ │    ├── components/    # Componentes modulares (Navbar, Hero, Forms).
+ │    ├── pages/         # Vistas principales (Index.tsx).
+ │    └── App.tsx        # Configuración principal.
+ └── README.md           # Documentación del proyecto.
 
-Follow these steps:
+ ---
 
-```sh
-# Step 1: Clone the repository using the project's Git URL.
-git clone <YOUR_GIT_URL>
+## 5. Funcionalidades de la Landing Page
 
-# Step 2: Navigate to the project directory.
-cd <YOUR_PROJECT_NAME>
+ /Funcionalidades
+ ├── Navegación Inteligente: Navbar con hipervínculos internos (Servicios, Cómo Funciona, Beneficios).
+ ├── Captación Estratégica: Formulario interactivo para recolección de necesidades del cliente.
+ ├── Validación de Liderazgo: Botón con redirección externa a tarjeta de presentación del líder.
+ ├── Visualización de Datos: Dashboards en tiempo real con métricas de SLA y salud del servicio.
+ └── UX Responsiva: Diseño adaptado a móviles con animaciones hover y efectos glow neón.
 
-# Step 3: Install the necessary dependencies.
-npm i
+ ---
 
-# Step 4: Start the development server with auto-reloading and an instant preview.
-npm run dev
-```
-
-**Edit a file directly in GitHub**
-
-- Navigate to the desired file(s).
-- Click the "Edit" button (pencil icon) at the top right of the file view.
-- Make your changes and commit the changes.
-
-**Use GitHub Codespaces**
-
-- Navigate to the main page of your repository.
-- Click on the "Code" button (green button) near the top right.
-- Select the "Codespaces" tab.
-- Click on "New codespace" to launch a new Codespace environment.
-- Edit files directly within the Codespace and commit and push your changes once you're done.
-
-## What technologies are used for this project?
-
-This project is built with:
-
-- Vite
-- TypeScript
-- React
-- shadcn-ui
-- Tailwind CSS
-
-## How can I deploy this project?
-
-Simply open [Lovable](https://lovable.dev/projects/REPLACE_WITH_PROJECT_ID) and click on Share -> Publish.
-
-## Can I connect a custom domain to my Lovable project?
-
-Yes, you can!
-
-To connect a domain, navigate to Project > Settings > Domains and click Connect Domain.
-
-Read more here: [Setting up a custom domain](https://docs.lovable.dev/features/custom-domain#custom-domain)
+## 8. Mejoras Futuras
+/Roadmap
+ ├── Portal de Tickets: Sistema de autogestión con seguimiento de estado para el cliente.
+ ├── WebSockets: Integración de métricas dinámicas con actualización sin recarga.
+ ├── Localización: Soporte multi-idioma para expansión a mercados globales.
+ └── App Móvil: Notificaciones push para alertas críticas de observabilidad.
+ --
