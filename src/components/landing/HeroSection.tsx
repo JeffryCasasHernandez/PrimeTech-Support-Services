@@ -49,11 +49,11 @@ const HeroSection = () => {
             className="text-4xl md:text-5xl lg:text-7xl font-bold leading-tight mb-6 animate-fade-in"
             style={{ animationDelay: '0.1s' }}
           >
-            BUEN DÍA{' '}
+            Más que Soporte{' '}
             <br />
-            <span className="gradient-text">COACH</span>
+            <span className="gradient-text">Garantizamos la Continuidad</span>
             <br />
-            <span className="text-muted-foreground">de CALIDAD SERVICIO DE SOFTWARE 3
+            <span className="text-muted-foreground">de tu Negocio
 </span>
           </h1>
 
