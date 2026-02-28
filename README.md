@@ -1,75 +1,222 @@
-# PrimeTech Support Services - Documentación Técnica de la Landing Page
-
-![Hero Preview](https://primetech-support-services.vercel.app/#)
-
-## 1. Información General
-* **Nombre del Proyecto:** PrimeTech Support Services
-* **Nombre del Estudiante:** Jeffry Santiago Casas Hernandez
-* **Fecha:** Febrero 2026
-* **Curso:** CALIDAD SERVICIO DE SOFTWARE 3
-* **Enlace del Proyecto:** [https://primetech-support-services.vercel.app/#](https://primetech-support-services.vercel.app/#
+# 🚀 PrimeTech Support Services
 
 ---
 
-## 2. Descripción del Proyecto
+## 1. Información general
+
+- **Nombre del proyecto:** PrimeTech Support Services  
+- **Nombre del estudiante / Líder del proyecto:** Jeffry Santiago Casas Hernandez  
+- **Curso:** CALIDAD SERVICIO DE SOFTWARE 3 
+- **Fecha:** 28/02/2026
+
+---
+
+## 2. Descripción del proyecto
+
+PrimeTech Support Services es una landing page profesional diseñada para presentar servicios especializados de soporte técnico y gestión de incidencias empresariales.
+
+El objetivo principal del proyecto es ofrecer una propuesta clara, moderna y orientada a la conversión, permitiendo a las empresas conocer cómo podemos transformar su operación de soporte en un sistema eficiente, estructurado y centrado en la satisfacción del cliente.
+
+La landing incluye información estratégica sobre:
+
+- Servicios ofrecidos
+- Metodología de trabajo
+- Beneficios principales
+- Llamados a la acción (CTA)
+- Formulario de contacto
+- Redirección directa al líder del proyecto mediante tarjeta de presentación digital
+
 ### ¿Qué hace el proyecto?
-Es una Landing Page profesional diseñada para ofrecer servicios de **Mesa de Ayuda de Nueva Generación**, enfocada en la transición del soporte reactivo hacia la **observabilidad proactiva**.
 
-### ¿Qué problema soluciona?
-Resuelve la ineficiencia operativa y la desinformación en el soporte técnico, abordando el impacto del factor humano que representa hasta el **50% de los retrasos**.
+- Presenta una propuesta profesional de soporte técnico.
+- Permite a los usuarios conocer el modelo de trabajo.
+- Facilita la solicitud de asesoría personalizada.
+- Genera confianza mediante la validación con el líder del proyecto.
+
+### ¿Para quién está pensado?
+
+- Empresas que necesitan optimizar su mesa de ayuda.
+- Negocios que requieren soporte técnico profesional.
+- Organizaciones que buscan mejorar tiempos de respuesta.
+- Emprendimientos que desean estructurar su soporte tecnológico.
 
 ---
 
-## 3. Tecnologías Utilizadas
-* **React.js & Vite:** Framework para una Single Page Application de alto rendimiento.
-* **Tailwind CSS:** Estilos modernos con estética Cyberpunk y paleta Neón.
-* **Lucide React:** Iconografía técnica para dashboards y servicios.
-* **Git & GitHub:** Control de versiones y flujo de trabajo profesional.
+## 3. Tecnologías utilizadas
+
+- HTML5  
+- CSS3  
+- JavaScript  
+- Tailwind CSS  
+- Git  
+- GitHub  
+- Vercel (Despliegue del proyecto)
 
 ---
 
-## 4. Estructura del Proyecto
-Organización de archivos basada en el entorno de Lovable:
+## 4. Estructura del proyecto
 
-```text
-/PrimeTech-Support-Services
- ├── public/             # Recursos estáticos.
- ├── src/                # Código fuente.
- │    ├── components/    # Componentes modulares (Navbar, Hero, Forms).
- │    ├── pages/         # Vistas principales (Index.tsx).
- │    └── App.tsx        # Configuración principal.
- └── README.md           # Documentación del proyecto.
+```plaintext
+/primetech-support-services
+│── index.html
+│── /css
+│   └── styles.css
+│── /js
+│   └── main.js
+│── /images
+│   ├── hero.png
+│   ├── servicios.png
+│   ├── formulario.png
+│── README.md
+```
 
- ---
+### Explicación de la estructura
 
-## 5. Funcionalidades de la Landing Page
+- **index.html:** Archivo principal donde se estructura toda la landing page.
+- **/css:** Carpeta que contiene los estilos personalizados del proyecto.
+- **/js:** Carpeta que contiene los scripts para interactividad y validaciones.
+- **README.md:** Documento explicativo del proyecto.
 
- /Funcionalidades
- ├── Navegación Inteligente: Navbar con hipervínculos internos (Servicios, Cómo Funciona, Beneficios).
- ├── Captación Estratégica: Formulario interactivo para recolección de necesidades del cliente.
- ├── Validación de Liderazgo: Botón con redirección externa a tarjeta de presentación del líder.
- ├── Visualización de Datos: Dashboards en tiempo real con métricas de SLA y salud del servicio.
- └── UX Responsiva: Diseño adaptado a móviles con animaciones hover y efectos glow neón.
+---
 
- ---
+## 5. Funcionalidades
+
+### 🔹 1. Página principal (Landing Page)
+
+- Sección Hero con mensaje de conversión.
+- Navegación superior con enlaces a:
+  - Servicios
+  - Cómo funciona
+  - Beneficios
+- Botón principal de “Solicitar Asesoría”.
+- Diseño oscuro profesional con enfoque tecnológico.
+
+---
+
+### 🔹 2. Sección de Servicios
+
+- Explicación clara de los servicios de soporte ofrecidos.
+- Presentación estructurada de soluciones tecnológicas.
+- Enfoque en eficiencia operativa y satisfacción del cliente.
+
+---
+
+### 🔹 3. Sección “Cómo Funciona”
+
+- Explicación del proceso de implementación del servicio.
+- Flujo estructurado desde diagnóstico hasta optimización.
+- Orientado a mostrar claridad y profesionalismo.
+
+---
+
+### 🔹 4. Sección de Beneficios
+
+- Mejora de tiempos de respuesta.
+- Optimización de procesos.
+- Mayor satisfacción del cliente.
+- Soporte técnico estructurado.
+- Profesionalización del servicio de incidencias.
+
+---
+
+### 🔹 5. Formulario de contacto
+
+Ubicado en la sección final de la landing.
+
+Permite al usuario ingresar:
+
+- Nombre completo  
+- Empresa  
+- Correo electrónico  
+- Descripción de la necesidad  
+
+Incluye:
+
+- Validación básica de campos.
+- Botón principal de envío.
+- Diseño visual enfocado en conversión.
+
+---
+
+### 🔹 6. Redirección al Líder del Proyecto
+
+El botón **“Validación con Líder del Proyecto”** redirecciona a la tarjeta de presentación digital del líder:
+
+  https://tarjeta-presentacion-jeffry-hernand.vercel.app/
+
+Esto permite:
+
+- Generar confianza.
+- Humanizar el servicio.
+- Facilitar contacto directo.
+- Reforzar la credibilidad del proyecto.
+
+---
+
+### 🔹 7. Diseño Responsive
+
+- Adaptable a escritorio.
+- Compatible con tablet.
+- Optimizado para dispositivos móviles.
+- Correcta visualización en diferentes resoluciones.
+
+---
+
+### 🔹 8. Experiencia Visual Moderna
+
+- Paleta de colores profesional (modo oscuro).
+- Botones con efectos visuales llamativos.
+- Animaciones suaves.
+- Jerarquía visual clara.
+- Enfoque estratégico en conversión.
+
+---
 
 ## 6. Capturas de pantalla
 
-  ### Vista Principal (Hero)
-   ![Inicio](./IMG-Proyecto/IMG-Inicio.png)
+```markdown
+![Inicio](IMG-Proyecto/IMG-Inicio.png)
+![Servicios](IMG-Proyecto/IMG-Body.png)
+![Formulario](IMG-Proyecto/IMG-Formulario_Final.png)
 
-  ### Metodología de Trabajo
-   ![Metodología](./IMG-Proyecto/IMG-Body.png)
+```
 
-  ### Formulario de Contacto y Validación
-   ![Contacto](./IMG-Proyecto/IMG-Formulario_Final.png)
+- Sección principal (Hero).
+- Sección de servicios.
+- Formulario de contacto.
 
- ---
+---
 
-## 8. Mejoras Futuras
-/Roadmap
- ├── Portal de Tickets: Sistema de autogestión con seguimiento de estado para el cliente.
- ├── WebSockets: Integración de métricas dinámicas con actualización sin recarga.
- ├── Localización: Soporte multi-idioma para expansión a mercados globales.
- └── App Móvil: Notificaciones push para alertas críticas de observabilidad.
- --
+## 8. Mejoras futuras
+
+- Integración con backend real para envío automático de correos.
+- Implementación de sistema de tickets.
+- Conexión con CRM.
+- Integración con WhatsApp Business.
+- Panel administrativo.
+- Métricas y analítica avanzada.
+- Automatización de respuestas.
+- Implementación de base de datos.
+
+---
+
+# 🌐 Enlaces del proyecto
+
+- 🔗 Landing Principal:  
+  https://primetech-support-services.vercel.app/
+
+- 🔗 Tarjeta de Presentación del Líder:  
+  https://tarjeta-presentacion-jeffry-hernand.vercel.app/
+
+---
+
+# 📌 Estado del Proyecto
+
+Proyecto funcional desplegado en Vercel.  
+Diseñado como propuesta profesional de soporte técnico empresarial.
+
+---
+
+# 📄 Licencia
+
+Proyecto desarrollado con fines académicos y de portafolio profesional.
