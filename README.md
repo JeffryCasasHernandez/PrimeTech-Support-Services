@@ -1,13 +1,13 @@
 # PrimeTech Support Services - Documentación Técnica de la Landing Page
 
-![Hero Preview](https://primetech-support-services.vercel.app/captura-hero.png)
+![Hero Preview](https://primetech-support-services.vercel.app/#)
 
 ## 1. Información General
 * **Nombre del Proyecto:** PrimeTech Support Services
 * **Nombre del Estudiante:** Jeffry Santiago Casas Hernandez
 * **Fecha:** Febrero 2026
 * **Curso:** CALIDAD SERVICIO DE SOFTWARE 3
-* **Enlace del Proyecto:** [https://primetech-support-services.vercel.app/](https://primetech-support-services.vercel.app/)
+* **Enlace del Proyecto:** [https://primetech-support-services.vercel.app/#](https://primetech-support-services.vercel.app/#
 
 ---
 
