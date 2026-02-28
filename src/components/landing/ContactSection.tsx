@@ -1,6 +1,6 @@
 import { useState } from 'react';
 import { Button } from '@/components/ui/button';
-import { Send, CheckCircle2, Sparkles } from 'lucide-react';
+import { Send, CheckCircle2, Sparkles, UserCheck } from 'lucide-react';
 
 const ContactSection = () => {
   const [isSubmitted, setIsSubmitted] = useState(false);
@@ -126,10 +126,25 @@ const ContactSection = () => {
                   <Send className="ml-2 w-5 h-5" />
                 </Button>
 
-                {/* Privacy Note */}
+                <div className="relative flex items-center gap-4 my-2">
+                  <div className="h-px flex-1 bg-border" />
+                  <span className="text-xs text-muted-foreground">o bien</span>
+                  <div className="h-px flex-1 bg-border" />
+                </div>
+
+                <Button variant="heroOutline" size="lg" asChild className="w-full hover:scale-[1.02] transition-all duration-300">
+                  <a href="https://tarjeta-presentacion-jeffry-hernand.vercel.app/" target="_blank" rel="noopener noreferrer">
+                    <UserCheck className="mr-2 w-5 h-5" />
+                    Validación con Líder del Proyecto
+                  </a>
+                </Button>
                 <p className="text-xs text-muted-foreground text-center">
-                  Al enviar este formulario, aceptas que nos comuniquemos contigo para discutir 
-                  cómo podemos ayudarte. No compartimos tu información con terceros.
+                  Conoce al líder funcional detrás de PrimeTech y valida nuestra visión técnica de primera mano.
+                </p>
+
+                {/* Privacy Note */}
+                <p className="text-xs text-muted-foreground text-center mt-2">
+                  Al enviar este formulario, aceptas que nos comuniquemos contigo. No compartimos tu información con terceros.
                 </p>
               </form>
             ) : (

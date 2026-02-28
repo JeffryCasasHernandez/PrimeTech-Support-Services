@@ -107,10 +107,17 @@ const CTASection = () => {
                   <ArrowRight className="ml-2 w-5 h-5" />
                 </a>
               </Button>
-              <p className="text-xs text-muted-foreground">
-                Sin compromiso · Respuesta en 24 hrs
-              </p>
+              <Button variant="heroOutline" size="xl" asChild className="w-full sm:w-auto hover:scale-105 transition-transform">
+                <a href="https://tarjeta-presentacion-jeffry-hernand.vercel.app/" target="_blank" rel="noopener noreferrer">
+                  <Shield className="mr-2 w-5 h-5" />
+                  Validación con Líder del Proyecto
+                </a>
+              </Button>
             </div>
+            <p className="text-xs text-muted-foreground mt-4 max-w-md mx-auto">
+              Valida directamente la visión y liderazgo técnico detrás de PrimeTech. 
+              Transparencia total con quien lidera tu transformación.
+            </p>
           </div>
         </div>
 
