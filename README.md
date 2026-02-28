@@ -55,14 +55,13 @@ Organización de archivos basada en el entorno de Lovable:
 
 ## 6. Capturas de pantalla
 
- Imagen de inicio:
-   ![Inicio](./IMG-Proyecto/IMG-Inicio.png)
+## 6. Capturas de pantalla
 
- Imagen del cuerpo/metodología:
-   ![Metodología](./IMG-Proyecto/IMG-Body.png)
+  ![Inicio](./IMG-Proyecto/IMG-Inicio.png)
 
- Imagen del formulario final:
-   ![Contacto](./IMG-Proyecto/IMG-Formulario_Final.png)
+  ![Metodología](./IMG-Proyecto/IMG-Body.png)
+
+  ![Contacto](./IMG-Proyecto/IMG-Formulario_Final.png)
 
  ---
 
