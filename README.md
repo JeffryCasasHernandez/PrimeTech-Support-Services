@@ -53,6 +53,19 @@ Organización de archivos basada en el entorno de Lovable:
 
  ---
 
+## 6. Capturas de pantalla
+
+ Imagen de inicio:
+   ![Inicio](./IMG-Proyecto/IMG-Inicio.png)
+
+ Imagen del cuerpo/metodología:
+   ![Metodología](./IMG-Proyecto/IMG-Body.png)
+
+ Imagen del formulario final:
+   ![Contacto](./IMG-Proyecto/IMG-Formulario_Final.png)
+
+ ---
+
 ## 8. Mejoras Futuras
 /Roadmap
  ├── Portal de Tickets: Sistema de autogestión con seguimiento de estado para el cliente.
