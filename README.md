@@ -1,4 +1,4 @@
-# 🚀 PrimeTech Support Services
+#  PrimeTech Support Services
 
 ---
 
@@ -272,7 +272,7 @@ Abrir esa dirección en el navegador para visualizar la landing page funcionando
 
 ### 🔹 Repositorio oficial
 
-🔗 https://github.com/JeffryCasasHernandez/PrimeTech-Support-Services.git
+ https://github.com/JeffryCasasHernandez/PrimeTech-Support-Services.git
 
 ---
 
@@ -291,23 +291,41 @@ Abrir esa dirección en el navegador para visualizar la landing page funcionando
 
 ---
 
-# 🌐 Enlaces del proyecto
+#  Enlaces del proyecto
 
-- 🔗 Landing Principal:  
+-  Landing Principal:  
   https://primetech-support-services.vercel.app/
 
-- 🔗 Tarjeta de Presentación del Líder:  
+-  Tarjeta de Presentación del Líder:  
   https://tarjeta-presentacion-jeffry-hernand.vercel.app/
 
 ---
 
-# 📌 Estado del Proyecto
+#  Estado del Proyecto
 
 Proyecto funcional desplegado en Vercel.  
 Diseñado como propuesta profesional de soporte técnico empresarial.
 
 ---
 
-# 📄 Licencia
+---
+
+# Autor
+
+Jeffry Santiago Casas Hernandez  
+Líder del Proyecto – PrimeTech Support Services
+
+---
+
+# Despliegue
+
+Landing en producción:
+https://primetech-support-services.vercel.app/
+
+---
+
+---
+
+#  Licencia
 
 Proyecto desarrollado con fines académicos y de portafolio profesional.
