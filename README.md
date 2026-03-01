@@ -184,6 +184,97 @@ Esto permite:
 - Sección principal (Hero).
 - Sección de servicios.
 - Formulario de contacto.
+---
+
+## 7. Cómo ejecutar el proyecto
+
+Sigue los siguientes pasos para ejecutar el proyecto en tu entorno local:
+
+### 🔹 Requisitos previos
+
+- Tener instalado Node.js
+- Tener instalado Git
+- Tener instalado npm (incluido con Node.js)
+
+---
+
+### 🔹 1. Crear una carpeta para el proyecto (Opcional)
+
+```bash
+mkdir PrimeTech-Support-Services
+cd PrimeTech-Support-Services
+```
+
+---
+
+### 🔹 2. Clonar el repositorio desde GitHub
+
+Abrir Git Bash o la terminal y ejecutar:
+
+```bash
+git clone https://github.com/JeffryCasasHernandez/PrimeTech-Support-Services.git
+```
+
+Luego ingresar a la carpeta del proyecto:
+
+```bash
+cd PrimeTech-Support-Services
+```
+
+---
+
+### 🔹 3. Instalar dependencias
+
+Antes de ejecutar el proyecto es necesario instalar las dependencias:
+
+```bash
+npm install
+```
+
+Esto instalará todos los paquetes necesarios definidos en el archivo `package.json`.
+
+---
+
+### 🔹 4. Inicializar el proyecto (si aplica)
+
+En caso de necesitar inicializar npm manualmente:
+
+```bash
+npm init 
+```
+
+> Nota: Este paso solo es necesario si el proyecto no tiene `package.json`.  
+> Si ya existe, se puede omitir.
+
+---
+
+### 🔹 5. Ejecutar el servidor de desarrollo
+
+Para iniciar el proyecto en modo desarrollo:
+
+```bash
+npm run dev
+```
+
+---
+
+### 🔹 6. Abrir en el navegador
+
+Una vez ejecutado el comando anterior, la terminal mostrará una URL similar a:
+
+```
+http://localhost:8081/
+```
+
+Abrir esa dirección en el navegador para visualizar la landing page funcionando en entorno local.
+
+---
+
+### 🔹 Repositorio oficial
+
+🔗 https://github.com/JeffryCasasHernandez/PrimeTech-Support-Services.git
+
+---
 
 ---
 
